@@ -1,0 +1,171 @@
+.admin-page-full-cont {
+  background-color: rgb(50, 66, 137);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-page-cont {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  background-color: #dedede;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 90vh;
+}
+
+.admin-back-button {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-back-button:hover {
+  transform: scale(1.2);
+}
+
+.admin-routes {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.admin-routes p {
+  font-size: 25px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.admin-routes p:hover {
+  font-size: 30px;
+}
+
+.admin-all-users,
+.admin-all-transactions {
+  height: 95vh;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.admin-users {
+  width: 85%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(172, 172, 172);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 30% 10% 15%;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-users p,
+.admin-trans p,
+.admin-employee p {
+  font-size: 20px;
+}
+.admin-employee button,
+.admin-users button {
+  width: 80px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.admin-employee button:hover,
+.admin-users button:hover {
+  background-color: black;
+}
+
+.admin-trans {
+  width: 85%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(172, 172, 172);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 25% 25% 20% 30%;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-emloyee-con {
+  height: 95vh;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.admin-employee {
+  width: 85%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(172, 172, 172);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  gap: 10px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+  .admin-users {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .admin-routes p {
+    font-size: larger;
+  }
+  .admin-users {
+    grid-template-columns: repeat(2, 3fr);
+  }
+  .admin-trans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-employee {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .admin-back-button {
+    top: 0%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-users,
+  .admin-employee,
+  .admin-trans {
+    display: flex;
+    flex-direction: column;
+  }
+}

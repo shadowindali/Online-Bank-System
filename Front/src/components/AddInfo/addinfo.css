@@ -1,0 +1,92 @@
+.profile-full-container {
+  display: flex;
+  background-color: rgb(50, 66, 137);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.profile-container {
+  width: 40vw;
+  height: 90vh;
+  background-color: #fff;
+}
+
+.profile-head {
+  height: 15vh;
+  background: linear-gradient(180deg, rgb(44, 53, 94), black);
+  color: White;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-head h1 {
+  margin-left: 10vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.profile-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.user-data-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.save-button {
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(50, 66, 137);
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.save-button:hover {
+  transform: scale(1.1);
+}
+
+.small-inputfield-add {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile-data-container {
+    flex-direction: column;
+  }
+
+  .profile-full-container {
+    height: 100vh;
+  }
+
+  .profile-container {
+    width: 80vw;
+  }
+
+  .profile-head {
+    justify-content: center;
+  }
+
+  .profile-image-container {
+    width: 100%;
+  }
+
+  .profile-data-container {
+    background-color: #fff;
+  }
+}

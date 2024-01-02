@@ -1,0 +1,47 @@
+@keyframes Opa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.full-login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(50, 66, 137);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 30vw;
+  height: 70vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  animation: Opa 0.6s;
+}
+
+.image-con {
+  width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-container {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .login-container {
+    width: 80vw;
+  }
+}

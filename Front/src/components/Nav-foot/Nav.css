@@ -1,0 +1,151 @@
+.full-nav-container {
+  height: 12vh;
+  width: 100vw;
+  background: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 90%;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.nav-items a:hover {
+  transform: scale(1.5);
+  color: rgb(83, 135, 207);
+}
+
+.nav-button {
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  transition: 0.5s;
+}
+
+.nav-button:hover {
+  transform: scale(1.3);
+}
+
+.logout-button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(221, 123, 123);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  transform: scale(1.2);
+}
+
+.mobile-view {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(60, 78, 156, 0.69);
+}
+
+.background-mobile {
+  z-index: 1001;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.nav-item-mobile {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.nav-item-mobile a {
+  color: white;
+  list-style: none;
+  z-index: 10000;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 50px;
+}
+
+.nav-item-mobile a:hover {
+  color: black;
+}
+
+.menu-button-nav {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-page {
+    margin-right: 65vw;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-button-nav {
+    left: 85% !important;
+  }
+
+  .navbar button {
+    right: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .user-name-nav {
+    display: none;
+  }
+
+  .menu-button-nav {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    width: 40px;
+    left: 50%;
+  }
+
+  .nav-items {
+    display: none;
+  }
+}

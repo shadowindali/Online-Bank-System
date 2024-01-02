@@ -1,0 +1,261 @@
+.full-send-container {
+  background-color: rgb(50, 66, 137);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-container {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  width: 85vw;
+  height: 85vh;
+  background-color: #dedede;
+  overflow: hidden;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.allusers {
+  margin-left: 30px;
+  width: 30%;
+  height: 80%;
+  background-color: rgb(186, 186, 186);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 6px;
+  border: 3px solid #000000;
+}
+
+.user-cont {
+  margin-top: 10px;
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+
+.user-cont:hover {
+  background-color: rgb(150, 150, 150);
+}
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 10px;
+}
+.user-email {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+}
+
+.selected {
+  background-color: rgb(57, 93, 147);
+}
+
+.selected:hover {
+  background-color: rgb(57, 93, 147);
+}
+
+.ussearch {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+}
+
+.ussearch input {
+  background: none;
+  border: none;
+  outline: 0;
+  font-size: 1.2vw;
+}
+
+.balance-to-send-cont {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(186, 186, 186);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.balance-to-send-cont h1 {
+  font-size: 3vw;
+}
+
+.balance-to-send-cont input {
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: 0;
+  font-size: 1.2vw;
+}
+
+.balance-to-send-cont button {
+  padding: 1vw;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgb(57, 93, 147);
+  color: white;
+}
+
+.balance-to-send-cont button:hover {
+  transform: scale(1.2);
+}
+
+.status-of-transaction {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.right-side-send {
+  width: 25vw;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.req-cont {
+  width: 90%;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.req-cont-up,
+.req-cont-down {
+  display: flex;
+  justify-content: space-around;
+}
+
+.req-cont-up p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.req-cont-down button {
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.req-cont-down button:hover {
+  background-color: black !important;
+}
+
+@media screen and (max-width: 1050px) {
+  .full-send-container {
+    height: auto;
+  }
+  .send-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .right-side-send {
+    width: 60vw;
+  }
+
+  .allusers {
+    margin-top: 30px;
+    width: 60vw;
+    height: 80vh;
+  }
+
+  .balance-to-send-cont,
+  .status-of-transaction {
+    width: 60vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+
+  .balance-to-send-cont h1 {
+    font-size: 50px;
+  }
+
+  .balance-to-send-cont input {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .ussearch input {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .allusers {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .right-side-send {
+    width: 90%;
+  }
+
+  .balance-to-send-cont,
+  .status-of-transaction {
+    width: 90%;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+
+  .balance-to-send-cont h1 {
+    font-size: 8vw;
+  }
+
+  .balance-to-send-cont input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+  }
+}

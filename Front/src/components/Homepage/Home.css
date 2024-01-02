@@ -1,0 +1,37 @@
+.home-full-container {
+  /* width: 100vw; */
+  height: 100vh;
+  background-image: url("Home.jpg");
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+.empty-space {
+  height: 15vh;
+}
+
+.home-content h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 5vw;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.home-content p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin-left: 80px;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 500px) {
+  .home-content h1 {
+    font-size: 40px;
+  }
+  .home-content p {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+}
